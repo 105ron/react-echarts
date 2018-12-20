@@ -15,10 +15,10 @@ $ npm install rc-echarts
 
 ```js
 import Chart from 'rc-echarts';
-import React from 'react';
+import React, {createClass} from 'react';
 import ReactDOM from 'react-dom';
 
-const myChart = React.creatClass({
+const myChart = createClass({
   ready(echart) {
     console.log(echart);
     echart.on('click', (params)=>{
@@ -44,10 +44,10 @@ ReactDOM.render(<myChart />, container);
 *折线图*
 ```js
 import Chart from 'rc-echarts';
-import React from 'react';
+import React, {createClass} from 'react';
 import ReactDOM from 'react-dom';
 
-const myChart = React.creatClass({
+const myChart = createClass({
   render() {
     <Chart {...options} >
         <Chart.Line {...series} />
@@ -62,10 +62,10 @@ ReactDOM.render(<myChart />, container);
 *柱状图*
 ```js
 import Chart from 'rc-echarts';
-import React from 'react';
+import React, {createClass} from 'react';
 import ReactDOM from 'react-dom';
 
-const myChart = React.creatClass({
+const myChart = createClass({
   render() {
     <Chart {...options} >
         <Chart.Bar {...series} />
@@ -78,10 +78,10 @@ ReactDOM.render(<myChart />, container);
 *饼图*
 ```js
 import Chart from 'rc-echarts';
-import React from 'react';
+import React, {createClass} from 'react';
 import ReactDOM from 'react-dom';
 
-const myChart = React.creatClass({
+const myChart = createClass({
   render() {
     <Chart {...options} >
         <Chart.Pie {...series} />
@@ -94,10 +94,10 @@ ReactDOM.render(<myChart />, container);
 *标签云图*
 ```js
 import Chart from 'rc-echarts';
-import React from 'react';
+import React, {createClass} from 'react';
 import ReactDOM from 'react-dom';
 
-const myChart = React.creatClass({
+const myChart = createClass({
   render() {
     <Chart {...options} >
         <Chart.Cloud {...series} />
@@ -110,10 +110,10 @@ ReactDOM.render(<myChart />, container);
 *地图*
 ```js
 import Chart from 'rc-echarts';
-import React from 'react';
+import React, {createClass} from 'react';
 import ReactDOM from 'react-dom';
 
-const myChart = React.creatClass({
+const myChart = createClass({
   render() {
     <Chart {...options} >
         <Chart.Map {...series} />
@@ -128,10 +128,10 @@ ReactDOM.render(<myChart />, container);
 
 ```js
 import Chart from 'rc-echarts';
-import React from 'react';
+import React, { createClass } from 'react';
 import ReactDOM from 'react-dom';
 
-const myChart = React.creatClass({
+const myChart = createClass({
   render() {
     <Chart {...options} >
         <Chart.Series {...series} type="line" />
@@ -150,7 +150,7 @@ import Chart from 'rc-echarts';
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const myChart = React.creatClass({
+const myChart = React.createClass({
   ready(chart) {
     chart.on('click', ()=>{
       alert('click');
